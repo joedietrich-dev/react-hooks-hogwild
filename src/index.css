@@ -5,7 +5,7 @@ body {
 }
 
 .App {
-  margin: 0% 5% 0% 5%;
+  margin: 0% 5%;
   text-align: center;
 }
 
@@ -24,6 +24,10 @@ body {
 
 .filterWrapper {
   margin: 2% 0% 2% 0%;
+}
+
+.filterWrapper button.ui.button {
+  margin-left: 3em;
 }
 
 .headerText {
@@ -62,10 +66,16 @@ ul {
   list-style: none;
 }
 
-.normalText ul {
-  font-family: Georgia, serif;
-  font-size: .75em;
+ul .card {
   text-align: left;
+}
+
+ul.ui.cards > li.card img.hog-image {
+  object-fit: cover;
+  height: 12em;
+}
+.description > .description-label {
+  font-weight: 700;
 }
 
 .subtleText {
@@ -73,55 +83,16 @@ ul {
   font-size: .75em;
 }
 
+.hidden {
+  visibility: hidden;
+}
 
 .indexWrapper {
   margin: auto;
 }
 
-
-.pigTile {
-  display: inline;
-  background-repeat: no-repeat;
-  background-position: center 90%;
-  float: left;
-  margin: 2%;
-  padding: 1%;
-  outline: #3B0B0B dotted thick;
-  transition: 0.75s;
-  opacity: 1;
-}
-
-.minBackgroundSneak {
-  position: absolute;
-  width: inherit;
-  height: inherit;
-  background-size: cover;
-  z-index: -3;
-}
-
-.maxBackgroundSneak {
-  position: absolute;
-  width: inherit;
-  height: inherit;
-  background-size: cover;
-  z-index: -3;
-  opacity: 0.75;
-}
-
 .pigTile h3 {
   color: #FBB;
-}
-
-.minPigTile {
-  width: 250px;
-  height: 250px;
-  background-size: cover;
-}
-
-.maxPigTile {
-  background-size: cover;
-  width: 500px;
-  height: 500px;
 }
 
 .pigTile:hover {
